@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Project Info</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/project-info}" th:object="${project}" method="post">
+    <p>Project Manager: <input type="text" th:field="*{projectManager}" /></p>
+    <p>Solution Architect: <input type="text" th:field="*{solutionArchitect}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

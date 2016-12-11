@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ProjectInfo: Existing Projects</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Existing Projects</h1>
+
+<table>
+    <tr><th>Project Name</th><th>Project Manager</th><th>Solution Architect</th></tr>
+    <tr th:each="project : ${projects}">
+        <td th:text="${project.name}">Project Name</td>
+        <td th:text="${project.projectManager}">Project Manager</td>
+        <td th:text="${project.solutionArchitect}">Solution Architect</td>
+    </tr>
+</table>
+
+<p>Enter new project <a href="/project-info/new">here</a></p>
+
+</body>
+</html>

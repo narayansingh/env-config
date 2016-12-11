@@ -1,11 +1,12 @@
-package com.dsl.model;
+package com.dsl.view;
 
 /**
  * Created by narayansingh on 10/12/2016.
  */
-public class ProjectInfo {
+public class ProjectInfoView {
     private String projectManager;
     private String solutionArchitect;
+    public String name;
 
     public String getProjectManager() {
         return projectManager;
@@ -21,5 +22,13 @@ public class ProjectInfo {
 
     public void setSolutionArchitect(String solutionArchitect) {
         this.solutionArchitect = solutionArchitect;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
